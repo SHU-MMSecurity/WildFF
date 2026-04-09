@@ -27,11 +27,15 @@ WildFF is an **in-the-wild face forgery (DeepFake) dataset** used in the paper
 
 <img width="1054" height="175" alt="image" src="https://github.com/user-attachments/assets/aa5ff6d8-9075-47f8-9d03-42c9d0fd81db" />
 
+First, we collect a large volume of videos from popular online video-sharing platforms, including Bilibili, TikTok, Red Book, X, YouTube, and Instagram. Then, we filter these videos using a diverse set of common face-related search tags (e.g., interview, live stream, face swap, synthetic faces) to select real and fake videos that contain faces. Next, the collected videos are decoded at a rate of one Frame Per Second (FPS) to obtain a representative set of frames. We then employ advanced face detection models (RetinaFace and MTCNN) to identify and crop the largest face in each frame. Faces with a detection confidence below 0.9 or a resolution lower than 64×64 pixels are discarded to ensure basic quality. This process produces a large number of unlabeled face image samples.
+
+Finally, we randomly select some of the face images for labeling. The labeled samples are divided into two parts. Clean labels come from videos with watermark markings, i.e., videos identified as AI-generated fake by online platforms, as well as faces we manually label as fake and real. Noisy label samples are derived from human annotation errors, where labels are randomly flipped with a certain probability, as well as simulated label-flipping attacks, where labels for a subset are flipped. The final dataset is a mix of labeled and unlabeled data.
 
 ## Dataset Distribution
 
 <img width="1130" height="370" alt="image" src="https://github.com/user-attachments/assets/40f096fb-28c9-4786-b6a0-c025ca3d2e87" />
 
+Our dataset maintains a balanced gender ratio, diverse age groups, and a wide range of skin tones. These statistics confirm that WildFF covers a diverse range of themes, enhancing its validity as a real-world benchmark.
 
 ## Download
 
