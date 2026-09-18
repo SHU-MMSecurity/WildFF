@@ -64,8 +64,7 @@ Our dataset maintains a balanced gender ratio, diverse age groups, and a wide ra
 
 ## Download
 
-Baidu Netdisk link: https://pan.baidu.com/s/16vdUrahUrbXBO2ErxWlvgQ?pwd=89af
-Password: 89af
+Baidu Netdisk link: https://pan.baidu.com/s/1DWetV_MI-_JfTlKZTA4qqg?pwd=hvqf
 
 
 ## Usage & License
@@ -76,6 +75,5 @@ Password: 89af
 
 ## Contact
 
-Shichuang Xie  
 shichuang_xie@shu.edu.cn
 
